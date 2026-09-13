@@ -1,0 +1,14 @@
+{
+  "name": "Pedrinho Barbearia",
+  "short_name": "Pedrinho",
+  "icons": [
+    {
+      "src": "assets/images/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "theme_color": "#141210",
+  "background_color": "#141210",
+  "display": "standalone"
+}

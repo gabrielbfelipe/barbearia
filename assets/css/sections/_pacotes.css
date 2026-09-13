@@ -1,0 +1,12 @@
+.pacote-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-sm);
+}
+
+.pacote-card__preco-sufixo {
+  font-family: var(--fonte-corpo);
+  font-size: 0.9rem;
+  color: var(--cor-texto-suave);
+  font-weight: 400;
+}

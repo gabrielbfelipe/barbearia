@@ -1,0 +1,39 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.75rem;
+  border-radius: var(--raio-borda-sm);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  min-height: 44px;
+  transition: transform var(--transicao-rapida), background var(--transicao-rapida), border-color var(--transicao-rapida);
+  white-space: nowrap;
+}
+
+.btn--primario {
+  background: var(--cor-dourado);
+  color: #1c1712;
+}
+
+.btn--primario:hover {
+  background: var(--cor-dourado-claro);
+  transform: translateY(-1px);
+}
+
+.btn--secundario {
+  border: 1px solid var(--cor-borda);
+  color: var(--cor-texto);
+  background: transparent;
+}
+
+.btn--secundario:hover {
+  border-color: var(--cor-dourado);
+  color: var(--cor-dourado);
+}
+
+.btn--bloco {
+  width: 100%;
+}

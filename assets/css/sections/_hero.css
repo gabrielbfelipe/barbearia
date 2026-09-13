@@ -1,0 +1,87 @@
+.hero {
+  position: relative;
+  min-height: 88svh;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.hero__imagem {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: var(--cor-overlay-hero);
+}
+
+.hero__conteudo {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: var(--largura-maxima);
+  margin: 0 auto;
+  padding: var(--espaco-xxl) var(--espaco-md) var(--espaco-xl);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--cor-borda);
+  border-radius: 999px;
+  font-size: 0.8rem;
+  color: var(--cor-texto-suave);
+  background: rgba(28, 25, 22, 0.6);
+  margin-bottom: var(--espaco-md);
+}
+
+.badge__estrelas {
+  color: var(--cor-dourado);
+  letter-spacing: 0.1em;
+}
+
+.hero__titulo {
+  font-size: clamp(2.2rem, 5vw + 1rem, 3.75rem);
+  max-width: 16ch;
+  margin-bottom: var(--espaco-sm);
+}
+
+.hero__subtitulo {
+  color: var(--cor-texto-suave);
+  font-size: 1.05rem;
+  max-width: 52ch;
+  margin-bottom: var(--espaco-lg);
+}
+
+.hero__acoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--espaco-sm);
+}
+
+.eyebrow {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+  color: var(--cor-dourado);
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: var(--espaco-xs);
+}
+
+.secao-cabecalho {
+  max-width: 640px;
+  margin: 0 auto var(--espaco-lg);
+  text-align: center;
+}
+
+.secao-cabecalho .hero__subtitulo {
+  margin: 0 auto;
+}

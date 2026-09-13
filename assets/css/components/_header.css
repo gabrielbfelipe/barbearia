@@ -1,0 +1,133 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--espaco-md);
+  padding: var(--espaco-sm) var(--espaco-md);
+  background: rgba(20, 18, 16, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--cor-borda);
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--fonte-titulo);
+  font-size: 1.25rem;
+  letter-spacing: 0.02em;
+}
+
+.header__logo-img {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
+
+.header__logo em {
+  color: var(--cor-dourado);
+  font-style: normal;
+}
+
+.header__nav {
+  display: none;
+  gap: var(--espaco-lg);
+}
+
+.header__nav a {
+  font-size: 0.9rem;
+  color: var(--cor-texto-suave);
+  transition: color var(--transicao-rapida);
+}
+
+.header__nav a:hover {
+  color: var(--cor-texto);
+}
+
+.header__acoes {
+  display: flex;
+  align-items: center;
+  gap: var(--espaco-sm);
+}
+
+.header__menu-btn {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 0.5rem;
+}
+
+.header__menu-btn span {
+  width: 22px;
+  height: 2px;
+  background: var(--cor-texto);
+  transition: transform var(--transicao-rapida), opacity var(--transicao-rapida);
+}
+
+.header__menu-mobile {
+  position: fixed;
+  inset: 0 0 auto 0;
+  top: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-md);
+  padding: var(--espaco-lg) var(--espaco-md);
+  background: var(--cor-superficie);
+  border-bottom: 1px solid var(--cor-borda);
+  transform: translateY(-8px);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform var(--transicao-padrao), opacity var(--transicao-padrao);
+}
+
+.header__menu-mobile.is-aberto {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.header__menu-mobile a {
+  font-size: 1.05rem;
+  color: var(--cor-texto);
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: var(--espaco-xs) var(--espaco-sm);
+    gap: var(--espaco-xs);
+  }
+
+  .header__logo {
+    font-size: 1rem;
+    gap: 0.4rem;
+  }
+
+  .header__logo-img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .header__acoes {
+    gap: 0.4rem;
+  }
+
+  .header__acoes .btn--primario {
+    padding: 0.6rem 1rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 860px) {
+  .header__nav {
+    display: flex;
+  }
+
+  .header__menu-btn,
+  .header__menu-mobile {
+    display: none;
+  }
+}

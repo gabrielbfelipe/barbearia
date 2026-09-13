@@ -1,0 +1,36 @@
+:root {
+  /* Cores */
+  --cor-fundo: #141210;
+  --cor-superficie: #1c1916;
+  --cor-borda: #2d2723;
+  --cor-texto: #fdfbf7;
+  --cor-texto-suave: #a89f91;
+  --cor-dourado: #c5a059;
+  --cor-dourado-claro: #d4af37;
+  --cor-destaque-bg: linear-gradient(160deg, #2a2318, #1c1916);
+  --cor-overlay-hero: linear-gradient(180deg, rgba(20, 18, 16, 0.9), rgba(20, 18, 16, 0.55) 40%, rgba(20, 18, 16, 0.96));
+
+  /* Tipografia */
+  --fonte-titulo: "Playfair Display", serif;
+  --fonte-corpo: "Montserrat", sans-serif;
+
+  /* Espaçamento */
+  --espaco-xs: 0.5rem;
+  --espaco-sm: 1rem;
+  --espaco-md: 1.5rem;
+  --espaco-lg: 2.5rem;
+  --espaco-xl: 4rem;
+  --espaco-xxl: 6rem;
+
+  /* Layout */
+  --largura-maxima: 1180px;
+  --raio-borda: 10px;
+  --raio-borda-sm: 6px;
+
+  /* Transições */
+  --transicao-rapida: 0.18s ease;
+  --transicao-padrao: 0.3s ease;
+
+  /* Sombra */
+  --sombra-card: 0 20px 40px -20px rgba(0, 0, 0, 0.6);
+}

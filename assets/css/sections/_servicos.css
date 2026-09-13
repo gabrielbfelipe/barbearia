@@ -1,0 +1,52 @@
+.secao {
+  padding: var(--espaco-xxl) var(--espaco-md);
+}
+
+.secao--superficie {
+  background: var(--cor-superficie);
+  border-top: 1px solid var(--cor-borda);
+  border-bottom: 1px solid var(--cor-borda);
+}
+
+.container {
+  max-width: var(--largura-maxima);
+  margin: 0 auto;
+}
+
+.prova-social {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--espaco-md);
+  max-width: var(--largura-maxima);
+  margin: 0 auto;
+  padding: var(--espaco-lg) var(--espaco-md);
+  text-align: center;
+}
+
+.prova-social__numero {
+  font-family: var(--fonte-titulo);
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  color: var(--cor-dourado);
+}
+
+.prova-social__label {
+  color: var(--cor-texto-suave);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+@media (min-width: 640px) {
+  .prova-social {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.servicos-destaque {
+  margin-bottom: var(--espaco-lg);
+}
+
+.servicos-tabela-wrapper {
+  max-width: 760px;
+  margin: 0 auto;
+}

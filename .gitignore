@@ -1,0 +1,17 @@
+.DS_Store
+Thumbs.db
+*.log
+.vercel
+
+# Fora de escopo deste repositório (landing page + SEO):
+# painel de gestão, backend e planejamento interno.
+plano-projeto-barbearia.md
+painel.html
+supabase/
+assets/css/main-painel.css
+assets/css/painel/
+assets/css/components/_forms.css
+assets/js/supabase-client.js
+assets/js/painel-*.js
+assets/js/utils.js
+assets/images/originais/
